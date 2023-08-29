@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{# 
+    Ici on incrémente les block de contenu HTML.
+    Les blocks sont dans le fichier ('base.html.twig)
+    Twig gère le reste 
+#}
+
+{% block title %}SymRecipe - Accueil
+{% endblock %}
+
+{% block body %}
+    <div class='container mt-4'>
+        <div class="jumbotron">
+            <h1 class="display-4">Bienvenue sur SymRecipe  !</h1>
+            <p class="lead">SymRecipe est une application qui va te permettre de créer des
+            recettes à base d'ingrédients que tu auras toi-même créer. Tu pourras partager te
+            recettes à la communauté du site, ou bien les garder en privées.</p>
+            <hr class="my-4">
+            <p>Pour commencer, rendez-vous sur la page d'inscription pour utiliser l'application.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Inscription</a>
+        </div>
+    </div>
+{% endblock %}
